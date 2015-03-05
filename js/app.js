@@ -25,13 +25,19 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	})
-	$('body').keydown(function() {
-		$('.ryu-still').hide();
-		$('.ryu-cool').show();
+	$('body').keydown(function(event) {
+		if (event.which == 88) {
+			$('.ryu-still').hide();
+			$('.ryu-ready').hide();
+			$('.ryu-cool').show();
+		}
 	})
-	$('body').keyup(function() {
-		$('.ryu-cool').hide();
-		$('.ryu-still').show();
+	$('body').keyup(function(event) {
+		if (event.which == 88) {
+			$('.ryu-cool').hide();
+			$('.ryu-ready').hide();
+			$('.ryu-still').show();
+		}
 	})
 });
 

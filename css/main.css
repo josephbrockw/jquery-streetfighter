@@ -12,6 +12,24 @@ body {
 	z-index: 1;
 }
 
+.text {
+	position: absolute;
+	left: 750px;
+	height: 425px;
+	width: 300px;
+	padding-top: 85px;
+	display: block;
+	top: 0;
+}
+
+p {
+	font-size: 40px;
+	font-family: 'Sigmar One'
+}
+
+br {
+	line-height: 4em
+}
 /*----------------Ryu--------------*/
 .ryu {
 	width: 659px;
