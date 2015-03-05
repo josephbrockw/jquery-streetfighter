@@ -19,12 +19,19 @@ $(document).ready(function() {
 				$(this).css('left', '520px');
 			}
 		);
-		
 	})
 	.mouseup(function() {
 		console.log('mouseup');
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+	})
+	$('body').keydown(function() {
+		$('.ryu-still').hide();
+		$('.ryu-cool').show();
+	})
+	$('body').keyup(function() {
+		$('.ryu-cool').hide();
+		$('.ryu-still').show();
 	})
 });
 
